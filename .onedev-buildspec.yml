@@ -1,0 +1,17 @@
+version: 38
+jobs:
+- name: Push to Github
+  steps:
+  - !PushRepository
+    name: Push to Cheatsheets-Mirror
+    remoteUrl: https://github.com/IronTooch/Cheatsheets-Mirror.git
+    passwordSecret: access-token
+    force: false
+    condition: ALL_PREVIOUS_STEPS_WERE_SUCCESSFUL
+  triggers:
+  - !BranchUpdateTrigger
+    branches: deploy
+  retryCondition: never
+  maxRetries: 3
+  retryDelay: 30
+  timeout: 14400
