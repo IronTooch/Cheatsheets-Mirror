@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Tooch\s Cheatsheets',
-  tagline: 'Quick references for a unique set of life experiences',
+  tagline: 'Quick reference for a unique set of life experiences',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
