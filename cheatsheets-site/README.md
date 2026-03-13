@@ -39,3 +39,11 @@ GIT_USER=<Your GitHub username> yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+## Using other components
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Checkbox from '@mui/material/Checkbox';
+
+`<Checkbox/>`
