@@ -15,7 +15,7 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://cheatsheets.tucc.io',
+  url: 'https://irontooch.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/Cheatsheets-Mirror/',
@@ -24,8 +24,8 @@ const config: Config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'IronTooch', // Usually your GitHub org/user name.
   projectName: 'cheatsheets', // Usually your repo name.
-  deploymentBranch: 'gh-pages',
-
+  deploymentBranch: 'main',
+  trailingSlash: false,
   onBrokenLinks: 'throw',
 
   // Even if you don't use internationalization, you can use this field to set
