@@ -12,6 +12,23 @@
 			"problemMatcher": [],
 			"label": "npm: build - cheatsheets-site",
 			"detail": "docusaurus build"
+		},
+		{
+			"type": "npm",
+			"script": "serve",
+			"path": "cheatsheets-site",
+			"problemMatcher": [],
+			"label": "npm: serve - cheatsheets-site",
+			"detail": "docusaurus serve"
+		},
+		{
+			"type": "npm",
+			"script": "start",
+			"path": "cheatsheets-site",
+			"problemMatcher": [],
+			"label": "npm: start - cheatsheets-site",
+			"detail": "docusaurus start"
+
 		}
 	]
 }
