@@ -1,0 +1,33 @@
+---
+id: docusaurus-pagination
+slug: /it/tools/docusaurus/pagination
+description: TODO
+---
+
+
+Pagination
+===============================================================================
+
+Change for a given page
+-------------------------------------------------------------------------------
+
+Add the following to the Front Matter
+
+```
+---
+pagination_next: null
+pagination_prev: null
+---
+```
+
+Remove Next/Previous from every page
+-------------------------------------------------------------------------------
+
+Add the following to `/src/css/custom.css`
+
+```
+.pagination-nav {
+  display: none;
+}
+
+```

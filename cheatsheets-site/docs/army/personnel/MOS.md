@@ -1,6 +1,6 @@
 ---
 id: MOS
-slug: /army/personnel
+slug: /army/personnel/mos
 description: Contains a listing of Army MOSs
 ---
 

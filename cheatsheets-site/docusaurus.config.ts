@@ -5,9 +5,10 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Tooch\s Cheatsheets',
+  title: 'Tooch\'s Cheatsheets',
   tagline: 'Quick reference for a unique set of life experiences',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/IronTooch.ico',
+  plugins:  ["@easyops-cn/docusaurus-search-local"],
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -54,6 +55,8 @@ const config: Config = {
         },
       } satisfies Preset.Options,
     ],
+
+
   ],
 
   themeConfig: {
@@ -65,8 +68,8 @@ const config: Config = {
     navbar: {
       title: 'Tooch\'s Cheatsheets',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Tooch\s Logo',
+        src: 'img/IronTooch_small.png',
       },
       items: [
         {
@@ -119,5 +122,7 @@ const config: Config = {
     },
   } satisfies Preset.ThemeConfig,
 };
+
+
 
 export default config;

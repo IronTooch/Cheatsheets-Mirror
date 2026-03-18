@@ -1,7 +1,6 @@
 ---
 id: web_design
 slug: /it/general/webdev/design
-sidebar_position: 1
 description: TODO
 ---
 

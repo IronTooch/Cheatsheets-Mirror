@@ -1,0 +1,47 @@
+---
+id: docusaurus-search
+slug: /it/tools/docusaurus/search
+description: TODO
+---
+
+Search
+===============================================================================
+
+Install Search
+-------------------------------------------------------------------------------
+
+npm install --save @easyops-cn/docusaurus-search-local
+
+Add to Docusaurus Theme
+-------------------------------------------------------------------------------
+
+```
+// In your `docusaurus.config.js`:
+module.exports = {
+  // ... Your other configurations.
+  themes: [
+    // ... Your other themes.
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      ({
+        hashed: true,
+
+        // Customize the keyboard shortcut to focus search bar (default is "mod+k"):
+        // searchBarShortcutKeymap: "s", // Use 'S' key
+        // searchBarShortcutKeymap: "ctrl+shift+f", // Use Ctrl+Shift+F
+
+        // If you're using `noIndex: true`, set `forceIgnoreNoIndex` to enable local index:
+        // forceIgnoreNoIndex: true,
+
+        // Enable Ask AI integration:
+        // askAi: {
+        //   project: "your-project-name",
+        //   apiUrl: "https://your-api-url.com/api/stream",
+        //   hotkey: "cmd+I", // Optional: keyboard shortcut to trigger Ask AI
+        // },
+      }),
+    ],
+  ],
+};
+```
