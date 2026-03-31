@@ -1,0 +1,36 @@
+---
+id: ubuntu-systemd
+slug: /it/os/ubuntu/systemd
+description: A place for info about SystemD service files
+---
+
+SystemD
+===============================================================================
+
+Example Service File
+-------------------------------------------------------------------------------
+
+```
+[Unit]
+Description=My Service Description
+After=syslog.target network.target
+
+[Service]
+Type=forking
+User=username
+Group=username
+WorkingDirectory=/home/username
+
+ExecStartPre=-/usr/bin/my_app prestart
+ExecStart=/usr/bin/my_app start -myopt x
+ExecStop=/usr/bin/my_app stop -myopt x
+
+[Install]
+WantedBy=multi-user.target
+
+```
+
+References
+-------------------------------------------------------------------------------
+
+* [MY_EASY_TITLE](https://www.google.com)

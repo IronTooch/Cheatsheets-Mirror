@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@easyops-cn/docusaurus-search-local": "^0.55.1",
+    "@cmfcmf/docusaurus-search-local": "^2.0.1",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mui/material": "^7.3.9",

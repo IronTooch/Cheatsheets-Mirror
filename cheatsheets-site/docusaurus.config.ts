@@ -8,7 +8,16 @@ const config: Config = {
   title: 'Tooch\'s Cheatsheets',
   tagline: 'Quick reference for a unique set of life experiences',
   favicon: 'img/IronTooch.ico',
-  plugins:  ["@easyops-cn/docusaurus-search-local"],
+plugins: [
+    [
+      "@cmfcmf/docusaurus-search-local",
+      {
+        indexDocs: true,
+  indexDocSidebarParentCategories: 0,
+  language: "en",
+      },
+    ],
+  ],
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -122,7 +131,5 @@ const config: Config = {
     },
   } satisfies Preset.ThemeConfig,
 };
-
-
 
 export default config;

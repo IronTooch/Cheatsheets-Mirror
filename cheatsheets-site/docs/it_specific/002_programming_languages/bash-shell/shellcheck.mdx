@@ -1,0 +1,42 @@
+---
+id: bash-shellcheck
+slug: /it/programming/bash/shellcheck
+description: A place for how to configure Shellcheck to make bash programming easier
+---
+
+Shellcheck Add-on
+===============================================================================
+
+Example Config file
+-------------------------------------------------------------------------------
+
+`~/.shellcheckrc`
+```
+# ~/.shellcheckrc
+
+# Double quote to prevent globbing
+# Disabled because it makes integer operations weird
+disable=SC2086
+
+# "Avoid masking local variables" warning 
+# Disabled because it adds unnecessary extra lines 
+disable=SC2155  
+  
+# See if you can use $[variable//search/replace) instead 
+# Disabled because it reduces readability for non-bash engineers vs sed command 
+disable=SC2001  
+  
+# See if you can use $[#variable) instead 
+# Disabled because it reduces readability for non-bash engineers vs wc command 
+disable=SC2000  
+  
+# Consider using {cmd1;cmd2} instead of individual redirects 
+# Disabled because it reduces readability and code clarity 
+disable=SC2129
+
+```
+
+References
+-------------------------------------------------------------------------------
+
+* [MY_EASY_TITLE](https://www.google.com)

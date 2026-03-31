@@ -1,0 +1,46 @@
+---
+id: docusaurus-vscode
+slug: /it/tools/docusaurus/vscode
+description: A place to stick handy VS Code helping info for making Docusaurus sites
+---
+
+Visual Studio Code Helpers
+===============================================================================
+
+Snippets
+-------------------------------------------------------------------------------
+
+### New Page Snippet
+
+```json
+	"New Cheatsheet": {
+    "prefix": "dcs-new",
+    "body": [
+      "---",
+      "id: ${1:page_id}",
+      "slug: /${2:page_slug}",
+      "description: ${3:page_description}",
+      "---",
+      "",
+      "${4:page_title}",
+      "===============================================================================",
+      "",
+      "${5:heading2}",
+      "-------------------------------------------------------------------------------",
+      "",
+      "* [mylink](https://www.google.com)",
+      "",
+      "References",
+      "-------------------------------------------------------------------------------",
+      "",
+      "* [MY_EASY_TITLE](https://www.google.com)"
+    ],
+    "description": "Creates a new baseline docusaurus page"
+  }
+```
+
+
+References
+-------------------------------------------------------------------------------
+
+* [MY_EASY_TITLE](https://www.google.com)
